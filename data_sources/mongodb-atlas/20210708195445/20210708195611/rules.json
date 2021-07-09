@@ -1,0 +1,36 @@
+{
+    "collection": "20210708195611",
+    "database": "20210708195445",
+    "roles": [
+        {
+            "name": "owner",
+            "apply_when": {
+                "userID": "%%user.id"
+            },
+            "read": true,
+            "write": true,
+            "insert": true,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "non-owner",
+            "apply_when": {},
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "search": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "Admin",
+            "apply_when": {},
+            "insert": false,
+            "delete": true,
+            "search": true,
+            "additional_fields": {}
+        }
+    ]
+}
